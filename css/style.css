@@ -96,6 +96,7 @@ body {
 }
 
 .btn-explore{
+  box-shadow: 0px 4px 74px -11px rgba(70, 154, 218, 0.426);
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
