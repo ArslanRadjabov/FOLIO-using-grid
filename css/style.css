@@ -11,5 +11,138 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+.header-section{
+  height: 75px;
+
+}
+.header-list{
+  color: #161C2D;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-ul{
+  margin-right: 30px;
+  gap: 45px;
+  list-style: none;
+  display: flex;
+}
+.ul-list-item{
+  color: #161C2D;
+  font-weight: 600;
+}
+.ul-list-item:hover{
+  color: rgb(58, 86, 209);
+}
+.icon-down-img{
+  position: relative;
+  align-items: center;
+  /* justify-content: center; */
+  top: 2px;
+  left: 10px;
+  transition: all 00.4s ease;  
+  rotate: (-180deg);
 }
 
+/* ----------------------------------------- */
+.menu-dropdown{
+  position: absolute;
+  top: 50px;
+  width: 100px;
+  height: 150px;
+  padding: 10px 15px;
+  flex-direction: column; 
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  opacity: 0;
+  z-index: -1;
+  transition-duration: 0.4s;
+  transition-property: top,opacity;
+}
+.menu-list{
+  list-style: none;
+}
+.menu-list a{
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+}
+.menu-drop-list:hover{
+  color: rgb(61, 90, 220);
+}
+.menu-item{
+  margin-bottom: 5px;
+}
+.hover-item{
+  position: relative;
+}
+.hover-item:hover .menu-dropdown{
+  top: 20px;
+  opacity: 1;
+  z-index: 10;
+}
+.hover-item:hover .icon-down-img{
+  rotate: (-180deg);
+}
+
+/* --------------hero-section--------------- */
+
+.container{
+  margin-top: 150px;
+  width: 1140px;
+  display: flex;
+}
+
+.btn-explore{
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 26px 30px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: #495FEF;
+  color: #fff;
+  width: 235px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  top: 20px;
+  transition: all 0.6s ease;
+}
+.btn-explore:hover{
+  top: 0;
+}
+.titles-left{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.title-of-hero{
+  color: #161C2D;
+  font-size: 79px;
+  line-height: 84px;
+  margin-bottom: 40px ;
+}
+.title-text{
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.imgs-hero{
+  position: relative;
+  top: -40px;
+  z-index: 1;
+}
+.arrow-right{
+  position: absolute;
+  left: 18%;
+  /* top: 5px; */
+  color: #fff;
+}
+
+#SVGDoc{
+  position: relative;
+  left: 25px;
+}
